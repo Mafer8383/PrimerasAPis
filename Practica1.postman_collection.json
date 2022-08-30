@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "a3e5436a-11f5-49f7-b8ce-d138ab28849b",
+		"name": "Practica1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22970883"
+	},
+	"item": [
+		{
+			"name": "MiData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Data",
+						"value": "null",
+						"type": "text"
+					},
+					{
+						"key": "Solicitud",
+						"value": "null",
+						"type": "text"
+					},
+					{
+						"key": "Retroalmentacion",
+						"value": "en espera",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://263dbbc0-f5b5-4663-a192-5a1a0bab2036.mock.pstmn.io/MiData?LLevar=40000&Implicar=60&Propuesta=Ninguna",
+					"protocol": "https",
+					"host": [
+						"263dbbc0-f5b5-4663-a192-5a1a0bab2036",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"MiData"
+					],
+					"query": [
+						{
+							"key": "LLevar",
+							"value": "40000"
+						},
+						{
+							"key": "Implicar",
+							"value": "60"
+						},
+						{
+							"key": "Propuesta",
+							"value": "Ninguna"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Exitoso",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Data",
+								"value": "Suscrito",
+								"type": "text"
+							},
+							{
+								"key": "Quien",
+								"value": "Mafer",
+								"type": "text"
+							},
+							{
+								"key": "MejorDia",
+								"value": "jueves",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://263dbbc0-f5b5-4663-a192-5a1a0bab2036.mock.pstmn.io/MiData",
+							"protocol": "https",
+							"host": [
+								"263dbbc0-f5b5-4663-a192-5a1a0bab2036",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"MiData"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"data\": \"Welcome!!! This is my webpage\",\n  \"Quien soy\": \"Mafer\",\n  \"El mejor día es\": \"Jueves\"\n}"
+				},
+				{
+					"name": "Not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Data",
+								"value": "Suscrito",
+								"type": "text"
+							},
+							{
+								"key": "Quien",
+								"value": "Mafer",
+								"type": "text"
+							},
+							{
+								"key": "MejorDia",
+								"value": "jueves",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://263dbbc0-f5b5-4663-a192-5a1a0bab2036.mock.pstmn.io/MiData?LLevar=40000&Implicar=60&Propuesta=Ninguna",
+							"protocol": "https",
+							"host": [
+								"263dbbc0-f5b5-4663-a192-5a1a0bab2036",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"MiData"
+							],
+							"query": [
+								{
+									"key": "LLevar",
+									"value": "40000"
+								},
+								{
+									"key": "Implicar",
+									"value": "60"
+								},
+								{
+									"key": "Propuesta",
+									"value": "Ninguna"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"LLevar\": 40000,\n  \"Implicar\": 60,\n  \"Propuesta\": \"Ninguna\"\n}"
+				},
+				{
+					"name": "Not content",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Data",
+								"value": "Suscrito",
+								"type": "text"
+							},
+							{
+								"key": "Quien",
+								"value": "Mafer",
+								"type": "text"
+							},
+							{
+								"key": "MejorDia",
+								"value": "jueves",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://263dbbc0-f5b5-4663-a192-5a1a0bab2036.mock.pstmn.io/MiData?Data=null&Solicitud=null&Retroalimentacion=en espera",
+							"protocol": "https",
+							"host": [
+								"263dbbc0-f5b5-4663-a192-5a1a0bab2036",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"MiData"
+							],
+							"query": [
+								{
+									"key": "Data",
+									"value": "null"
+								},
+								{
+									"key": "Solicitud",
+									"value": "null"
+								},
+								{
+									"key": "Retroalimentacion",
+									"value": "en espera"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"data\": \"Welcome!!! This is my webpage\",\n  \"Quien soy\": \"Mafer\",\n  \"El mejor día es\": \"Jueves\"\n}"
+				}
+			]
+		}
+	]
+}

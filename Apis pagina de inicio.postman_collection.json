@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "95a498db-d421-4917-940b-1afeb8640080",
+		"name": "Apis pagina de inicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22970883"
+	},
+	"item": [
+		{
+			"name": "Api crear tienda",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"La respuesta de la busqueda de la página debe ser OK\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.gatotv.com/buscar?q=%C3%89lite&pag=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"gatotv",
+						"com"
+					],
+					"path": [
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "%C3%89lite"
+						},
+						{
+							"key": "pag",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
